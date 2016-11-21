@@ -1,0 +1,90 @@
+<html>
+
+<title>twitter for websites</title>
+
+<head>
+
+<!-- defined css-->
+<style type="text/css">
+
+</style>
+
+</head>
+
+
+<body>
+
+<script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+
+<h2>you can add buttons from twitter button generator too</h2>
+<h3>WEB INTENT EXAMPLES</h3>
+
+<h4>https://twitter.com/intent/tweet</h4>
+params->
+<ul>
+
+	<!--SHARE TEXT -->
+	<!-- CLASS INFO, SHARE BUTTON SIMPLE TEXT ADDITION ATTRIBUT data-size="large" -->
+	<li>text->
+	<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=hey there" data-size="large">tweet text</a>
+	</li>
+
+	<!--SHARE URL + TEXT-->
+	<!-- CLASS INFO, SHARE BUTTON URL AND TEXT TOO -->
+	<li>url(http://_ )->
+	<a class="twitter-share-button" href="https://twitter.com/intent/tweet?url=http://www.shaanig.org&text=hey visit this">tweet url</a>
+	</li>
+
+	<!--HASTAGS -->
+	<!-- CLASS INFO, BUTTON_HASHTAG=HASHTAG NAME, -->
+	<li>hastags(sun,water)->
+	<a class="twitter-hashtag-button" href="https://twitter.com/intent/tweet?button_hashtag=TwitterStories&hashtags=sun,water">tweet hastags</a>
+	</li>
+
+<!--AVOID THIS
+	<li>via(username, ex:venkymudaliar)  ->
+	<a class="twitter-hashtag-button" href="https://twitter.com/intent/tweet?via=venkymudaliar">tweet via</a>
+	</li>
+-->
+
+	<!-- TWEET TO @USER -->
+	<li>tweet to ->
+	<a class="twitter-mention-button" href="https://twitter.com/intent/tweet?screen_name=venkymudaliar">Tweet to @venkymudaliar</a>
+	</li>
+
+	<!-- IN REPLY TO A CERTAIN TWEET DEPENDING ON ID OF TWEET-->
+	<li>in_reply_to(tweet_id)  ->
+	<a  href="https://twitter.com/intent/tweet?in_reply_to=794115114781802497">in reply to</a></li>
+
+
+<hr><hr>
+
+
+<h3>OTHER INTENTS EXAMPLES</h3>
+
+
+
+<!-- RETWEET  
+	URL= https://twitter.com/intent/retweet AND PARAMS-->
+retweet: param-> tweet_id
+<a href="https://twitter.com/intent/retweet?tweet_id=800020828746223617">Retweet</a>
+<hr>
+
+<!-- LIKE URL=  https://twitter.com/intent/like AND PARAMS-->
+like : param-> tweet_id
+<a href="https://twitter.com/intent/like?tweet_id=463440424141459456">Like</a>
+<hr>
+
+<!-- USER miniprofile URL=  https://twitter.com/intent/user AND PARAMS-->
+miniprofile: param: user_id or screen_name
+<a href="https://twitter.com/intent/user?screen_name=venkymudaliar">mini profile</a>
+<hr>
+
+<!--FOLLOW @USERNAME URL=  https://twitter.com/intent/follow AND PARAMS-->
+<!-- ALSO follow button class-->
+follow: param-> screen_name or user_id
+<a class="twitter-follow-button" href="https://twitter.com/intent/follow?screen_name=venkymudaliar">follow</a>
+
+</body>
+
+</html>
